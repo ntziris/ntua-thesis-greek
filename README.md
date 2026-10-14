@@ -2,10 +2,8 @@
 
 Diploma thesis template for the National Technical University of Athens (NTUA / ΕΜΠ), implemented as a [Typst](https://typst.app/) local package.
 
-An independent student-created template, used for a
-[completed NTUA diploma thesis](https://artemis.ece.ntua.gr/handle/123456789/20365).
-This is not an official university template; check the submission requirements
-of your school before submitting your document.
+This is an independent template, not an official university template.
+Check the submission requirements of your school before submitting your document.
 
 ![Template preview](thumbnail.png)
 
@@ -90,12 +88,12 @@ The bibliography uses `template/citation_styles/ieee-library.csl`, an IEEE
 adaptation matching the library's web-reference example. Its language is English
 (US), while its title remains **Βιβλιογραφία**. Online entries include publication
 dates when known and the actual access date. `template/bibliography.bib` contains
-an example; see `template/citation_styles/README.md` for supported fields and
+an example. See `template/citation_styles/README.md` for supported fields and
 Typst import limitations. The CSL file retains its separate CC BY-SA 3.0 license.
 
 After changing this template, run `just update` in the package directory.
 Existing thesis projects keep their own `main.typ`, bibliography, and citation
-style files; copy the corresponding changes into them as well. Build those
+style files. Copy the corresponding changes into them as well. Build those
 projects with their own `just all` or `just library` recipes.
 
 ## Configuration
@@ -264,7 +262,7 @@ Define entries in `back_matter/glossary.typ`, then reference with glossarium hel
 
 ### Short Captions
 
-Captions under figures and tables are usually several sentences long and carry citations. The lists of figures and tables want a plain title instead. Citations are dropped from those lists automatically; for the text itself use `#short-caption`, the equivalent of LaTeX's `\caption[short]{long}`:
+Captions under figures and tables are usually several sentences long and carry citations. The lists of figures and tables want a plain title instead. Citations are dropped from those lists automatically. For the text itself use `#short-caption`, the equivalent of LaTeX's `\caption[short]{long}`:
 
 ```typst
 #figure(
@@ -300,7 +298,7 @@ The final back cover is rendered automatically at the end of `main.typ`. It pick
 
 ### Book Cover Spread (paperback mode)
 
-`cover.typ` produces a single-page canvas containing the back cover, spine, and front cover, with auto-calculated spine width, 3 mm bleed, and crop marks for professional printing. Spine thickness is derived from the body PDF's page count; `just paperback` wires this up automatically.
+`cover.typ` produces a single-page canvas containing the back cover, spine, and front cover, with auto-calculated spine width, 3 mm bleed, and crop marks for professional printing. Spine thickness is derived from the body PDF's page count. `just paperback` wires this up automatically.
 
 ## Parameters
 
