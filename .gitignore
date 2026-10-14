@@ -1,0 +1,16 @@
+# Compiled output
+*.pdf
+
+# Typst cache
+.typst/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*~
+*.swp
+*.swo
+.vscode/
+.idea/

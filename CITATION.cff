@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If this template helps your work, please acknowledge it."
+type: software
+title: "ntua-thesis-greek: Greek NTUA diploma thesis template for Typst"
+authors:
+  - family-names: Tziris
+    given-names: Nikolaos
+version: 0.1.0
+license: MIT

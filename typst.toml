@@ -1,0 +1,17 @@
+[package]
+name = "ntua-thesis-greek"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Nikolaos Tziris"]
+license = "MIT"
+description = """
+Typst Template για διπλωματική εργασία της σχολής ηλεκτρολόγων μηχανικών \
+και μηχανικών υπολογιστών του ΕΜΠ"""
+compiler = "0.13.0"
+keywords = ["thesis", "ntua", "diploma", "greek"]
+categories = ["thesis"]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
