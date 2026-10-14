@@ -5,13 +5,36 @@ Diploma thesis template for the National Technical University of Athens (NTUA / 
 This is an independent template, not an official university template.
 Check the submission requirements of your school before submitting your document.
 
-![Template preview](thumbnail.png)
-
 Supports three output modes:
 
 - **Spiral binding**, a single PDF with the title page and back cover embedded
 - **Paperback binding**, a body-only PDF plus a separate print-ready book cover spread (back cover, spine, front cover) with automatic spine width, bleed, and crop marks
 - **Library submission**, a monochrome PDF without decorative cover elements
+
+## Preview
+
+The images below are rendered from the bundled template with its placeholder
+text. Open an image to view it at full size.
+
+| Decorated cover | Library cover |
+| --- | --- |
+| ![Decorated thesis cover with a gold border and NTUA emblem](thumbnail.png) | ![Monochrome thesis cover for library submission](docs/images/library-cover.png) |
+
+| Examination committee | Table of contents |
+| --- | --- |
+| ![Title page with supervisor and examination committee fields](docs/images/examination-committee.png) | ![Greek table of contents with chapter titles and page numbers](docs/images/contents.png) |
+
+| Chapter opening | Back cover |
+| --- | --- |
+| ![Chapter opening with a numbered heading and drop cap](docs/images/chapter-opening.png) | ![Gold back cover with placeholder summary text](docs/images/back-cover.png) |
+
+The paperback cover includes the back, spine, and front on one print-ready page.
+
+![Paperback cover spread with a spine and crop marks](docs/images/paperback-spread.png)
+
+To regenerate these images after installing the template, run
+`bash scripts/render-previews.sh` from the repository root. This requires Typst
+and Poppler's `pdfinfo` and `pdftoppm` tools.
 
 ## Installation
 
